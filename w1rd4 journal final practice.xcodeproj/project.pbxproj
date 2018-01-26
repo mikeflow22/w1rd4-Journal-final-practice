@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1B32A84B201AB8CA002958B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A84A201AB8CA002958B2 /* AppDelegate.swift */; };
-		1B32A84D201AB8CA002958B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A84C201AB8CA002958B2 /* ViewController.swift */; };
 		1B32A850201AB8CA002958B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B32A84E201AB8CA002958B2 /* Main.storyboard */; };
 		1B32A852201AB8CA002958B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B32A851201AB8CA002958B2 /* Assets.xcassets */; };
 		1B32A855201AB8CA002958B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B32A853201AB8CA002958B2 /* LaunchScreen.storyboard */; };
+		1B32A863201ABA55002958B2 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A862201ABA55002958B2 /* EntryListTableViewController.swift */; };
+		1B32A865201ABA85002958B2 /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A864201ABA85002958B2 /* EntryDetailViewController.swift */; };
+		1B32A867201ABBC4002958B2 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A866201ABBC4002958B2 /* Entry.swift */; };
+		1B32A869201ABC26002958B2 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B32A868201ABC26002958B2 /* EntryController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B32A847201AB8CA002958B2 /* w1rd4 journal final practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w1rd4 journal final practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B32A84A201AB8CA002958B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B32A84C201AB8CA002958B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B32A84F201AB8CA002958B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B32A851201AB8CA002958B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B32A854201AB8CA002958B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B32A856201AB8CA002958B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B32A862201ABA55002958B2 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		1B32A864201ABA85002958B2 /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		1B32A866201ABBC4002958B2 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		1B32A868201ABC26002958B2 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,57 @@
 		1B32A849201AB8CA002958B2 /* w1rd4 journal final practice */ = {
 			isa = PBXGroup;
 			children = (
-				1B32A84A201AB8CA002958B2 /* AppDelegate.swift */,
-				1B32A84C201AB8CA002958B2 /* ViewController.swift */,
-				1B32A84E201AB8CA002958B2 /* Main.storyboard */,
+				1B32A85D201AB97C002958B2 /* UI */,
+				1B32A861201AB9A7002958B2 /* View Controller */,
+				1B32A860201AB99D002958B2 /* Model Controller */,
+				1B32A85E201AB984002958B2 /* Model */,
+				1B32A85C201AB96A002958B2 /* Resources */,
+			);
+			path = "w1rd4 journal final practice";
+			sourceTree = "<group>";
+		};
+		1B32A85C201AB96A002958B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1B32A851201AB8CA002958B2 /* Assets.xcassets */,
 				1B32A853201AB8CA002958B2 /* LaunchScreen.storyboard */,
 				1B32A856201AB8CA002958B2 /* Info.plist */,
 			);
-			path = "w1rd4 journal final practice";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B32A85D201AB97C002958B2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B32A84A201AB8CA002958B2 /* AppDelegate.swift */,
+				1B32A84E201AB8CA002958B2 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1B32A85E201AB984002958B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B32A866201ABBC4002958B2 /* Entry.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B32A860201AB99D002958B2 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B32A868201ABC26002958B2 /* EntryController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		1B32A861201AB9A7002958B2 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B32A864201ABA85002958B2 /* EntryDetailViewController.swift */,
+				1B32A862201ABA55002958B2 /* EntryListTableViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B32A84D201AB8CA002958B2 /* ViewController.swift in Sources */,
+				1B32A867201ABBC4002958B2 /* Entry.swift in Sources */,
+				1B32A863201ABA55002958B2 /* EntryListTableViewController.swift in Sources */,
+				1B32A869201ABC26002958B2 /* EntryController.swift in Sources */,
+				1B32A865201ABA85002958B2 /* EntryDetailViewController.swift in Sources */,
 				1B32A84B201AB8CA002958B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "w1rd4 journal final practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/w1rd4 journal final practice/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "flowers.w1rd4-journal-final-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +341,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "w1rd4 journal final practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/w1rd4 journal final practice/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "flowers.w1rd4-journal-final-practice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
